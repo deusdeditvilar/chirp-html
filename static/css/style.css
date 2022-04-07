@@ -1,0 +1,152 @@
+
+.chirp-nav a {
+    color: var(--text-primary);
+    margin-left: 27px;
+}
+
+.twitter {
+    background: var(--twitter-link);
+    color: #fff !important;
+    padding: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.twitter object {
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+
+/* HERO DIVISION PART */
+.divider {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.divider>* {
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+
+}
+
+.first {
+    flex: 1 0 0%;
+}
+
+.info-cards {
+    flex: 1 0 0%;
+}
+
+@media (min-width:481px) and (max-width: 992px) {
+    .stats-card {
+        flex: 0 0 auto;
+        width: 60%;
+        margin-right: 15px;
+    }
+
+    .stat-card:first-child {
+        margin: 0;
+    }
+
+    .info-stat {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (min-width: 992px) {
+    .second {
+        flex: 0 0 auto;
+        width: 40%;
+    }
+}
+
+
+.profile-stack object:not(:first-child) {
+    margin-left: -26px;
+}
+
+.hero-buttons a:not(:first-child) {
+    margin: 0 20px;
+    text-decoration: none;
+    color: var(--link-primary);
+    font-weight: 700;
+}
+
+.profile-stats {
+    background: var(--bg-secondary);
+}
+
+.stats {
+    background: #fff;
+    padding: 15px;
+}
+
+.profile-stats, .stats, .stat-card, .stat-option {
+    border-radius: 4px;
+}
+
+.profile {
+    margin-left: 10px;
+    align-self: center;
+}
+
+.stat-username {
+    font-weight: 600;
+}
+
+#live-dot {
+    position: relative;
+}
+
+#live-dot::after {
+    content: "";
+    position: absolute;
+    background: #5fdabf;
+    width: 10px;
+    height: 10px;
+    border-radius: 30px;
+    bottom: 0;
+    top: 5px;
+    left: 6px;
+}
+
+.stat-info {
+    font-weight: 200;
+    font-size: .9rem;
+}
+
+.stat-option {
+    outline: none;
+    padding: 15px;
+    background: #fff;
+}
+
+.stat-card {
+    margin: 20px 0;
+    padding: 15px;
+    background: #fff;
+    box-shadow: 0px 10px 20px #b2cbcb, 10px -10px 20px #d7f5f5;
+}
+
+/* LARGE SCREENS */
+@media (min-width: 1200px) {
+
+    .width-small\@l {
+        width: 500px;
+    }
+
+    .hero-description {
+        width: 550px;
+    }
+}
+
+/* SMALL SCREENS */
+@media (max-width: 480px) {
+    .twitter {
+        font-size: .8rem;
+    }
+}

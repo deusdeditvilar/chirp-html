@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --bg-primary: #fbf8f3;
+    --bg-secondary: #d7f5f5;
+    --link-primary: #267898;
+    --text-primary: #595959;
+    --text-secondary: #737373;
+    --twitter-link: #24a1f2;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+p {
+    font-size: 1.02rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: var(--text-secondary);
+    margin: 15px 0;
+}
+
+strong {
+    color: #267898;
+}
+
+.color-black {
+    color: #000;
+}
+
+.font-small {
+    font-size: .85rem;
+}
+
+.container {
+    display: flow-root;
+    box-sizing: content-box;
+    max-width: 1010px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/* FLEX */
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-between {
+    justify-content: space-between;
+}
+
+.flex-align-center {
+    align-items: center;
+    align-self: center;
+}
+
+/* WIDTH */
+
+.width-small {
+    width: 500px;
+}
+
+/* MARGIN */
+.margin-remove {
+    margin: 0!important;
+}
+
+.margin-top-bottom {
+    margin: 25px 0;
+}
+
+
+/* PADDING */
+
+.padding {
+    padding: 40px;
+}
+
+.padding-small {
+    padding: 20px;
+}
+
+.padding-top-bottom {
+    padding: 40px 0;
+}
+
+/* LARGE SCREENS */
+@media (min-width: 1200px) {
+
+    .margin-top\@l{
+        margin-top: 40px;
+    }
+
+    .width-small\@l {
+        width: 500px;
+    }
+}
+
+/* SMALL AND MEDIUM SCREENS */
+@media (max-width: 992px) {
+    .flex-column-reverse\@m {
+        flex-direction: column-reverse;
+    }
+
+    .margin-top\@m {
+        margin-top: 30px;
+    }
+}
+
+
+/* SMALL SCREENS */
+@media (max-width: 480px) {
+    p {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
