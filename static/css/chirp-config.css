@@ -26,6 +26,10 @@ h1 {
     font-size: 3rem;
 }
 
+h2 {
+    font-size: 2rem;
+}
+
 h1, h2, h3, h4, p {
     margin: 0;
 }
@@ -42,12 +46,30 @@ strong {
     color: #267898;
 }
 
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+button, select {
+    outline: none;
+}
+
 .color-black {
     color: #000;
 }
 
 .font-small {
     font-size: .85rem;
+}
+
+.text-center {
+    text-align: center!important;
+}
+
+.hr {
+    height: .1px;
+    border-top: 1px solid #d3d3d2;
 }
 
 .container {
@@ -60,10 +82,24 @@ strong {
     padding-right: 15px;
 }
 
+.section-small {
+    padding: 40px 0;
+}
+
+.section {
+    display: flow-root;
+    box-sizing: border-box;
+    padding: 70px 0;
+}
+
 
 /* FLEX */
 .flex {
     display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
 }
 
 .flex-column {
@@ -79,10 +115,18 @@ strong {
     align-self: center;
 }
 
+/* GRID */
+
+.grid {
+    display: grid;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
 /* WIDTH */
 
-.width-small {
-    width: 500px;
+.width-full {
+    width: 100%;
 }
 
 /* MARGIN */
@@ -90,10 +134,35 @@ strong {
     margin: 0!important;
 }
 
+.margin-top {
+    margin-top: 25px;
+}
+
+
+.margin-bottom-remove {
+    margin-bottom: 0!important;
+}
+
+.margin-top-bottom-large {
+    margin: 40px 0;
+}
+
 .margin-top-bottom {
     margin: 25px 0;
 }
 
+.margin-top-bottom-small {
+    margin: 15px 0;
+}
+
+.margin-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.child-margin * {
+    margin: 0 10px;
+}
 
 /* PADDING */
 
@@ -105,8 +174,12 @@ strong {
     padding: 20px;
 }
 
-.padding-top-bottom {
-    padding: 40px 0;
+.padding-top-bottom-small {
+    padding: 20px 0;
+}
+
+.padding-top {
+    padding-top: 40px;
 }
 
 /* LARGE SCREENS */
@@ -139,7 +212,30 @@ strong {
         font-size: 1rem;
     }
 
-    h1 {
-        font-size: 2rem;
+    .flex-column\@s {
+        flex-direction: column;
+    }
+
+    .width-full\@s {
+        width: 100%;
+    }
+
+    .margin-top-small\@s {
+        margin-top: 10px;
+    }
+
+    .padding {
+        padding: 30px;
+    }
+}
+
+/* MEDIUM TO LARGE SCREENS */
+@media (min-width: 481px){
+    .width-xsmall\@m {
+        width: 400px;
+    }
+
+    .width-small\@m {
+        width: 500px;
     }
 }
