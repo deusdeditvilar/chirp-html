@@ -28,7 +28,6 @@
     pointer-events: none;
 }
 .chirp-nav {
-    /* position: fixed; */
     width: 100%;
     left: 0;
     right: 0;
@@ -40,6 +39,22 @@
 .chirp-nav a {
     color: var(--text-primary);
     margin-left: 27px;
+    position: relative;
+}
+
+.nav-links li:not(:last-child) a:after {
+    content: "";
+    position: absolute;
+    background: var(--text-primary);
+    width: 0;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    transition: all .3s;
+}
+
+.nav-links li:not(:last-child) a:hover::after {
+    width: 100%;
 }
 
 .chirp-nav button, .chirp-nav #hamburger {
@@ -87,7 +102,6 @@
 .logo {
     margin: 0;
     font-style: italic;
-    font-family: 'Inter';
     color: #3280f5;
     font-weight: 700;
 }
@@ -104,7 +118,7 @@
     cursor: pointer;
 }
 
-.twitter object {
+.twitter svg {
     vertical-align: middle;
     margin-right: 6px;
 }
@@ -152,7 +166,7 @@
 }
 
 
-.profile-stack object:not(:first-child) {
+.profile-stack img:not(:first-child) {
     margin-left: -26px;
 }
 
